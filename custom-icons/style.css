@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?8cb5yx');
+  src:  url('fonts/icomoon.eot?8cb5yx#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.woff2?8cb5yx') format('woff2'),
+    url('fonts/icomoon.ttf?8cb5yx') format('truetype'),
+    url('fonts/icomoon.woff?8cb5yx') format('woff'),
+    url('fonts/icomoon.svg?8cb5yx#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.kic  {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon';
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ic-preview:before {
+  content: "\e919";
+}
+.icon-ic-status-filled:before {
+  content: "\e91a";
+}
+.icon-ic-status:before {
+  content: "\e91b";
+}
+.icon-ic-autofit-allcolumns:before {
+  content: "\e907";
+}
+.icon-ic-autofit-singlecolumn:before {
+  content: "\e914";
+}
+.icon-ic-flag-blocked:before {
+  content: "\e915";
+}
+.icon-ic-cards:before {
+  content: "\e916";
+}
+.icon-ic-table-condensed:before {
+  content: "\e917";
+}
+.icon-ic-table:before {
+  content: "\e918";
+}
+.icon-ic-fpo:before {
+  content: "\e913";
+}
+.icon-ic-notes:before {
+  content: "\e906";
+}
+.icon-ic-files-lines:before {
+  content: "\e903";
+}
+.icon-ic-files:before {
+  content: "\e904";
+}
+.icon-ic-overlay:before {
+  content: "\e905";
+}
+.icon-ProgressCircle-Indeterminate-22 .path1:before {
+  content: "\e901";
+  color: rgb(198, 222, 237);
+}
+.icon-ProgressCircle-Indeterminate-22 .path2:before {
+  content: "\e902";
+  margin-left: -1em;
+  color: rgb(32, 93, 134);
+}
+.icon-ic-delta:before {
+  content: "\e900";
+}
+.icon-ic-arrow-swap:before {
+  content: "\e908";
+}
+.icon-ic-columnresize:before {
+  content: "\e909";
+}
+.icon-ic-details-panel:before {
+  content: "\e90b";
+}
+.icon-ic-file-edit:before {
+  content: "\e90c";
+}
+.icon-ic-file-user-slash:before {
+  content: "\e90d";
+}
+.icon-ic-first:before {
+  content: "\e90e";
+}
+.icon-ic-grab:before {
+  content: "\e90f";
+}
+.icon-ic-last:before {
+  content: "\e910";
+}
+.icon-ic-list-locked:before {
+  content: "\e911";
+}
+.icon-ic-pop-out:before {
+  content: "\e912";
+}
+.icon-ic-reset-all:before {
+  content: "\e90a";
+}
+.icon-ic-trash-can:before {
+  content: "\e922";
+}
