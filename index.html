@@ -155,6 +155,8 @@
           <kn-spin-box id="spinBoxId" value="0" layout="vertical right" max-value="5" label="this is a spin box"></kn-spin-box>
           <div class="spacer"></div>
           <kn-date-range-picker id="exampleDateRange" label="This is a label" min="2/20/2024" max="3/25/2024"></kn-date-range-picker>
+          <div class="spacer"></div>
+          <kn-date-picker id="exampleDatePicker" label="This is a label" date-format="MM/dd/yyyy"></kn-date-picker>
         </div>
       <div class="column">
           <div class="kn-headline-24 section-title">Buttons</div>
@@ -202,6 +204,12 @@
   </div>
   <kn-web-footer id="footerExample" sticky="true"></kn-web-footer>
   <script>
+    /********************
+    DATE PICKER    
+    ********************/
+    let datePicker = document.querySelector('#exampleDatePicker');
+    datePicker.min = '2/20/2024';
+     
     /********************
     DATE RANGE PICKER    
     ********************/
