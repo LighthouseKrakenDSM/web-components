@@ -99,17 +99,16 @@
 </head>
 <kn-web-masthead id="sampleMasthead"></kn-web-masthead>
 <body>
-  <kn-web-panel 
+  <kn-panel 
     id="examplePanelComponent"
-    panel-id="examplePanel"
     slider-container-elm="body" 
     drop-shadow="true" 
     slide-direction="left" 
     panel-width="250px"
     trigger="#examplePanelComponentId"
   >
-    <div slot="panel-title"><div class="kn-headline-24-heavy">Title</div></div>
-    <div slot="panel-actions">
+    <div slot="panel-header-title"><div class="kn-headline-24-heavy">Title</div></div>
+    <div slot="panel-header-actions">
       <i class="fa-regular fa-arrows-rotate kn-icon-sm kn-icon"></i>
     </div>
     <div slot="panel-body">
@@ -121,7 +120,7 @@
         <div class="text"><i class="kic icon-ic-fpo kn-icon-sm"></i> Sample label</div>
       </div>
     </div>
-  </kn-web-panel>
+  </kn-panel>
   <div class="page-wrapper" id="webComponents">
   <div class="container">
     <div class="kn-headline-42 title">Kraken Web Components</div>
