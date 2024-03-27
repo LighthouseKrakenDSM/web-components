@@ -138,7 +138,42 @@
       </div>
       <div class="column">
           <div class="kn-headline-24 section-title">Fields and Controls</div>
-          <kn-web-accordion id="webAccordionExample" width="100%" auto-collapse="true" sub-title-inline="false" control-left-aligned="false" filled-background="false"></kn-web-accordion>
+          <!-- <kn-web-accordion id="webAccordionExample" width="100%" auto-collapse="true" sub-title-inline="false" control-left-aligned="false" filled-background="false"></kn-web-accordion> -->
+          <kn-accordion 
+            component-id="'exampleAccordion'"
+            auto-collapse="true"
+            filled-background="true"
+            (onSelect)="selected($event)">
+            <div slot="content">
+            <kn-accordion-tier-one
+                id="group-1">
+                <div slot="title">Title 1</div>
+                <div slot="sub-title">sub title</div>
+                <div slot="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to
+                    make a type specimen book.
+                    <kn-button [buttonId]="'exampleButton'" [buttonType]="'kn-primary'" [buttonText]="'Button'"></kn-button>
+                </div>
+            </kn-accordion-tier-one>
+            <kn-accordion-tier-one
+                [id]="'group-2'"
+                [icon]="headerIcons">
+                <div title>Title 2</div>
+                <div sub-title>{{subTitleText}}</div>
+                <div content> 
+                    <kn-accordion-tier-two>
+                        <div title>Nested title</div>
+                        <div content> 
+                            <kn-accordion-tier-three>
+                                <div title>Nested title</div>
+                            </kn-accordion-tier-three>
+                        </div>
+                    </kn-accordion-tier-two>
+                </div>
+            </kn-accordion-tier-one>
+            </div>
+        </kn-accordion>
           <div class="spacer"></div>
           <kn-web-textbox id="exampleTextBox" name="example" label="Textbox" set-placeholder="Enter a value"></kn-web-textbox>
           <div class="spacer"></div>
@@ -604,44 +639,44 @@
     /********************
       ACCORDION
     ********************/
-		let accordion = document.querySelector("#webAccordionExample");
-		let accItems = 
-		[
-			{
-        "id": "title1", 
-        "title": "Title",
-        "subTitle":"Subtitle",
-        "icon":"fa-solid fa-gear kn-icon-sm",
-        "disabled": false,
-        "content": `<div class="acc-content">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-        when an unknown printer took a galley of type and scrambled it to
-        make a type specimen book. 
-        </div>`
-      },
-      {
-        "id": "title2", 
-        "title": "Title",
-        "subTitle":"Subtitle",
-        "icon":"fa-solid fa-gear kn-icon-sm",
-        "disabled": false,
-        "subHeader": [
-            { "id": "subHeader3", "title": "Nested title", "content": `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s`, "disabled": false, },
-            { 
-                "id": "subHeader4", 
-                "title": "Nested title", 
-                "disabled": false,
-                "content": "<label>Nested title</label>"
-            }
-          ]
-        }
-      ]
+		// let accordion = document.querySelector("#webAccordionExample");
+		// let accItems = 
+		// [
+		// 	{
+    //     "id": "title1", 
+    //     "title": "Title",
+    //     "subTitle":"Subtitle",
+    //     "icon":"fa-solid fa-gear kn-icon-sm",
+    //     "disabled": false,
+    //     "content": `<div class="acc-content">
+    //     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    //     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+    //     when an unknown printer took a galley of type and scrambled it to
+    //     make a type specimen book. 
+    //     </div>`
+    //   },
+    //   {
+    //     "id": "title2", 
+    //     "title": "Title",
+    //     "subTitle":"Subtitle",
+    //     "icon":"fa-solid fa-gear kn-icon-sm",
+    //     "disabled": false,
+    //     "subHeader": [
+    //         { "id": "subHeader3", "title": "Nested title", "content": `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s`, "disabled": false, },
+    //         { 
+    //             "id": "subHeader4", 
+    //             "title": "Nested title", 
+    //             "disabled": false,
+    //             "content": "<label>Nested title</label>"
+    //         }
+    //       ]
+    //     }
+    //   ]
 
-      accordion.accordionItems = accItems;
+    //   accordion.accordionItems = accItems;
 
-      //Bind to the accordion's click event 
-      accordion.addEventListener('onSelect', (event) => console.log(event.detail));
+    //   //Bind to the accordion's click event 
+    //   accordion.addEventListener('onSelect', (event) => console.log(event.detail));
 
       /********************
         TABS
